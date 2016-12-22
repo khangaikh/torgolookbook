@@ -32,6 +32,40 @@
         echo $template->render(array('title' => 'Products', 'nav'=>1));
         return;
     }
+
+    if(isset($_GET['dress'])){
+        $query = new ParseQuery("Fashion");
+        $query->equalTo("category","1");
+        $results = $query->find();
+        $template = $twig->loadTemplate('main.html');
+        echo $template->render(array('title' => 'Start', 'nav'=>1, 'fashions' => $results, 'type'=>1)); 
+        return;
+    }
+    if(isset($_GET['casual'])){
+        $query = new ParseQuery("Fashion");
+        $query->equalTo("category","2");
+        $results = $query->find();
+        $template = $twig->loadTemplate('main.html');
+        echo $template->render(array('title' => 'Start', 'nav'=>1, 'fashions' => $results, 'type'=>2)); 
+        return;
+    }
+    if(isset($_GET['coat'])){
+        $query = new ParseQuery("Fashion");
+        $query->equalTo("category","3");
+        $results = $query->find();
+        $template = $twig->loadTemplate('main.html');
+        echo $template->render(array('title' => 'Start', 'nav'=>1, 'fashions' => $results, 'type'=>3)); 
+        return;
+    }
+    if(isset($_GET['avant'])){
+        $query = new ParseQuery("Fashion");
+        $query->equalTo("category","4");
+        $results = $query->find();
+        $template = $twig->loadTemplate('main.html');
+        echo $template->render(array('title' => 'Start', 'nav'=>1, 'fashions' => $results, 'type'=>4)); 
+        return;
+    }
+
     if(isset($_SESSION['user'])){
         $user = $_SESSION['user'];
 

@@ -12,10 +12,10 @@
                 </div>
                 <div class="col-md-6">
                     <div class="section-buttons text-right">
-                        <a href="#" class="btn btn-default btn-dark">DRESS</a>
-                        <a href="#" class="btn btn-bordered btn-dark">CASUAL</a>
-                        <a href="#" class="btn btn-bordered btn-dark">COAT</a>
-                        <a href="#" class="btn btn-bordered btn-dark">AVANT-GARDE</a>
+                        <a href="index.php?dress" {%if type==1 %}class="btn btn-default btn-dark"{%else%}class="btn btn-bordered btn-dark"{%endif%}>DRESS</a>
+                        <a href="index.php?casual" {%if type==2 %}class="btn btn-default btn-dark"{%else%}class="btn btn-bordered btn-dark"{%endif%}>CASUAL</a>
+                        <a href="index.php?coat" {%if type==3 %}class="btn btn-default btn-dark"{%else%}class="btn btn-bordered btn-dark"{%endif%}>COAT</a>
+                        <a href="index.php?avant" {%if type==4 %}class="btn btn-default btn-dark"{%else%}class="btn btn-bordered btn-dark"{%endif%}>AVANT-GARDE</a>
                     </div>
                 </div>
             </div>

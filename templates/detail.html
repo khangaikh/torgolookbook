@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
      <!-- SECTION 1 - HERO TITLE -->
-        <section class="hero-title">
+      <!--  <section class="hero-title">
             <div class="container">
                 <div class="row">
                     <h2></h2>
-                </div><!-- // .row -->
-            </div><!-- // .container -->
+                </div>
+            </div>
         </section>
         <!-- // SECTION 1 -->
 
@@ -29,7 +29,6 @@
                         <aside class="hidden-xs hidden-sm">
                             <div class="widget instagram">
                                 {% for res in item.files %}
-                                    {{res}}
                                     <div class="item" style="width:48.3%">
                                         <img src="{{res}}" alt="{{item.code}}">
                                         <a href="{{res}}" class="popup">
