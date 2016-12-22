@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- SECTION 3 - CONTACT -->
+    <section class="contact space">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 left-side">
+                </div>
+                <div class="col-md-6">
+                    <div class="section-headline">
+                        <h3>ADMIN</h3>
+                        <p>We provide talented and beautiful models for businesses and media. Chekout our brand new agency models and new photography portfolios.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 left-side">
+                </div>
+            </div>
+
+            <div class="row">
+                <form action="login.php" method="post">
+                   <div class="col-md-3 left-side">
+                   </div>
+                   <div class="col-md-6 left-side">
+                        <input type="text" name="name" id="name" class="form-control fix" placeholder="admin">
+                        <input type="password" class="form-control fix" placeholder="*****" id="password" name="password">
+                        <div class="text-center">
+                            <button type="submit" name="submit" class="btn btn-default btn-fullwidth btn-dark">Login</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 left-side">
+                   </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<!-- // SECTION 3 -->
+{% endblock %}
+{% block scripting %}
+    {{parent()}}
+{% endblock %}

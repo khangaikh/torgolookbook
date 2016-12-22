@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- SECTION 3 - CONTACT -->
+    <section class="contact space">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 left-side">
+                </div>
+                <div class="col-md-6">
+                    <div class="section-headline">
+                        <h3>ADD NEW MODEL</h3>
+                        <p>We provide talented and beautiful models for businesses and media. Chekout our brand new agency models and new photography portfolios.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 left-side">
+                </div>
+            </div>
+
+            <div class="row">
+                <form action="add.php" method="post" enctype="multipart/form-data">
+                   <div class="col-md-3 left-side">
+                   </div>
+                   <div class="col-md-6 left-side">
+                        <input type="text" name="code"  class="form-control fix" placeholder="Code" required>
+                        <select class="form-control fix" name="category" required>
+                            <option value="1">DRESS</option>
+                            <option value="2">COAT</option>
+                            <option value="3">CASUAL</option>
+                            <option value="4">AVANT-GARDE</option>
+                        </select>
+                        <p>COVER</p>      
+                        <input id="cover" type="file" name="cover" accept="image/jpeg" multiple="" data-parsley-validate class="form-control" required/>
+                        <p>OTHER IMAGES</p>      
+                        <input id="uploadFile" type="file" name="files[]" class="form-control" multiple="" data-parsley-validate required="">
+                        <div class="text-center">
+                            <button type="submit" name="submit" class="btn btn-default btn-fullwidth btn-dark">ADD</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 left-side">
+                   </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<!-- // SECTION 3 -->
+{% endblock %}
+{% block scripting %}
+    {{parent()}}
+{% endblock %}

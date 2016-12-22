@@ -1,0 +1,706 @@
+/*
+// Table of content
+// -----------------------------------------------------------------------------
+// - 1. Homepage
+// - 2. About Page
+// - 3. Look Book Detail Page
+// - 4. Updates Page
+// - 5. Updates Detail Page
+// - 6. Contact Page
+*/
+/* -----------------------------------------------------------------------------
+// 1. Homepage
+// ----------------------------------------------------------------------------- */
+.homepage .section-headline {
+  margin-bottom: 50px;
+  text-align: left; }
+  .homepage .section-headline h3 {
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
+.homepage .section-buttons {
+  margin-top: 40px; }
+  .homepage .section-buttons .btn + .btn {
+    margin-left: 10px; }
+@media (max-width: 992px) {
+  .homepage .section-headline {
+    margin-bottom: 0; }
+  .homepage .section-buttons {
+    margin-bottom: 50px;
+    text-align: left; } }
+.homepage .hero-splash {
+  position: relative;
+  height: 800px;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  background: url(../img/bg.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .homepage .hero-splash .splash-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    @media (max-width: 992px) {
+      .homepage .hero-splash .splash-slider img {
+        max-width: initial; } }
+  .homepage .hero-splash .align {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .homepage .hero-splash h1 {
+    padding: 0 0 15px 0;
+    color: #fff;
+    font-size: 100px;
+    letter-spacing: 4px;
+    line-height: 120px;
+    text-transform: uppercase; }
+  @media (max-width: 768px) {
+    .homepage .hero-splash h1 {
+      font-size: 36px;
+      line-height: 46px; } }
+  .homepage .hero-splash .owl-buttons .owl-prev,
+  .homepage .hero-splash .owl-buttons .owl-next {
+    position: absolute;
+    top: initial;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    opacity: .5;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+    .homepage .hero-splash .owl-buttons .owl-prev:hover,
+    .homepage .hero-splash .owl-buttons .owl-next:hover {
+      opacity: 1; }
+  .homepage .hero-splash .owl-buttons .owl-prev {
+    right: initial;
+    left: 12%;
+    bottom: 50px; }
+  .homepage .hero-splash .owl-buttons .owl-next {
+    left: 17%;
+    right: initial;
+    bottom: 50px; }
+  @media (max-width: 992px) {
+    .homepage .hero-splash .owl-buttons {
+      display: none; } }
+.homepage .portfolio .item {
+  position: relative;
+  background-color: #181818;
+  overflow: hidden; }
+  .homepage .portfolio .item:before, .homepage .portfolio .item:after {
+    content: " ";
+    display: table; }
+  .homepage .portfolio .item:after {
+    clear: both; }
+  .homepage .portfolio .item.reverse .img {
+    right: auto;
+    left: 0; }
+  .homepage .portfolio .item.reverse .caption {
+    float: right; }
+  .homepage .portfolio .item .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    margin: 0; }
+  @media (max-width: 992px) {
+    .homepage .portfolio .item .img {
+      display: none; } }
+  .homepage .portfolio .item .caption {
+    padding: 50px 50px 25px 50px;
+    float: left;
+    width: 50%; }
+    @media (min-width: 1200px) {
+      .homepage .portfolio .item .caption {
+        padding: 25px 25px 20px 25px; } }
+    .homepage .portfolio .item .caption small {
+      font-family: "Droid Serif", Helvetica, Arial, sans-serif;
+      display: block;
+      font-size: 12px;
+      color: #717171;
+      margin-bottom: 10px;
+      text-transform: none; }
+    .homepage .portfolio .item .caption h4 {
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase; }
+      .homepage .portfolio .item .caption h4:after {
+        content: ' ';
+        display: block;
+        width: 15px;
+        height: 1px;
+        background-color: #d16651;
+        margin: 15px 0; }
+    .homepage .portfolio .item .caption p {
+      margin-bottom: 40px;
+      color: #717171; }
+    .homepage .portfolio .item .caption .list {
+      margin-bottom: 0; }
+      .homepage .portfolio .item .caption .list li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 5px; }
+      .homepage .portfolio .item .caption .list a {
+        color: #717171;
+        font-size: 12px;
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
+        -ms-transition: color 0.5s;
+        -o-transition: color 0.5s;
+        transition: color 0.5s; }
+        .homepage .portfolio .item .caption .list a:hover {
+          color: #fff;
+          text-decoration: none; }
+          .homepage .portfolio .item .caption .list a:hover i {
+            color: #d16651; }
+      .homepage .portfolio .item .caption .list i {
+        margin-right: 10px;
+        position: relative;
+        bottom: -2px;
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
+        -ms-transition: color 0.5s;
+        -o-transition: color 0.5s;
+        transition: color 0.5s; }
+  @media (max-width: 992px) {
+    .homepage .portfolio .item .caption {
+      width: 100%; } }
+.homepage .promo-video .play {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #d16651;
+  color: #fff;
+  font-size: 16px;
+  opacity: .9;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+.homepage .banner {
+  padding: 150px 0;
+  background: url(http://placehold.it/1400x600) center center;
+  text-align: center; }
+  .homepage .banner h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: 8px;
+    margin: 0 0 30px 0;
+    padding: 40px 0 30px 0;
+    border: 1px solid #fff; }
+  .homepage .banner .btn-default {
+    color: #181818; }
+  .homepage .banner .btn-light:hover {
+    color: #181818; }
+  .homepage .banner .btn + .btn {
+    margin-left: 10px; }
+.homepage .updates .item {
+  text-align: center; }
+  .homepage .updates .item .item-img {
+    height: 300px;
+    overflow: hidden; }
+  .homepage .updates .item figcaption {
+    padding: 30px 0 20px 0;
+    background-color: #181818; }
+    .homepage .updates .item figcaption h3 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: #fff;
+      text-transform: uppercase; }
+      .homepage .updates .item figcaption h3 a {
+        color: #fff; }
+    .homepage .updates .item figcaption .date {
+      font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      color: #d16651;
+      text-transform: uppercase; }
+      .homepage .updates .item figcaption .date:after {
+        content: ' ';
+        display: block;
+        width: 100px;
+        margin: 20px auto;
+        height: 1px;
+        background-color: #303030; }
+    .homepage .updates .item figcaption .author {
+      font-style: italic;
+      color: #717171; }
+@media (max-width: 992px) {
+  .homepage .updates .item {
+    margin-bottom: 30px; } }
+.homepage .features .item {
+  padding: 50px; }
+  .homepage .features .item h4 {
+    margin-bottom: 40px;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+    .homepage .features .item h4 + p {
+      margin-bottom: 30px;
+      color: #717171; }
+  .homepage .features .item.dark {
+    background-color: #181818; }
+  .homepage .features .item.light {
+    background-color: #242424; }
+  .homepage .features .item.lighter {
+    background-color: #363636; }
+
+/* -----------------------------------------------------------------------------
+// 2. About Page
+// ----------------------------------------------------------------------------- */
+.about .section-headline {
+  margin-bottom: 50px;
+  text-align: left; }
+  .about .section-headline h3 {
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
+.about .hero-title {
+  background: url(http://placehold.it/1895x500); }
+.about .counters {
+  padding: 150px 0;
+  background: url(http://placehold.it/1895x500) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+.about .skills h2 {
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+
+/* -----------------------------------------------------------------------------
+// 3. Look Book Detail Page
+// ----------------------------------------------------------------------------- */
+.lookbook-detail .section-headline {
+  margin-bottom: 50px;
+  text-align: left; }
+  .lookbook-detail .section-headline h3 {
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
+.lookbook-detail .section-social {
+  padding: 0;
+  margin-top: 30px;
+  text-align: right; }
+  .lookbook-detail .section-social li {
+    display: inline-block;
+    list-style-type: none; }
+  .lookbook-detail .section-social a {
+    display: inline-block;
+    margin-left: 20px;
+    color: #c4c4c4;
+    font-size: 16px;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s; }
+    .lookbook-detail .section-social a:hover {
+      color: #d16651; }
+.lookbook-detail .hero-title {
+  height: 800px;
+  height: 100vh;
+  background: url(http://placehold.it/1895x1150) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .lookbook-detail .hero-title h2 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    font-size: 60px; }
+.lookbook-detail .post img {
+  margin-bottom: 20px; }
+.lookbook-detail .post .infobox {
+  margin-bottom: 30px;
+  padding: 50px;
+  background-color: #f9f9f9;
+  text-align: center; }
+  .lookbook-detail .post .infobox h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-size: 20px; }
+.lookbook-detail .post .pagination {
+  display: block;
+  margin: 50px 15px 0 15px;
+  padding: 30px 0 0 0;
+  border-top: 1px solid #f1f1f1;
+  border-radius: 0;
+  font-size: 18px; }
+  .lookbook-detail .post .pagination a {
+    color: #e5e5e5; }
+    .lookbook-detail .post .pagination a:hover {
+      color: #c5c5c5; }
+  .lookbook-detail .post .pagination .arrow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #e5e5e5; }
+    .lookbook-detail .post .pagination .arrow:hover {
+      border-color: #c5c5c5; }
+
+/* -----------------------------------------------------------------------------
+// 4. Updates Page
+// ----------------------------------------------------------------------------- */
+.updates-page .hero-title {
+  background: url(http://placehold.it/1895x500); }
+.updates-page .updates .item {
+  margin-bottom: 30px;
+  text-align: center; }
+  .updates-page .updates .item .item-img {
+    height: 300px;
+    overflow: hidden; }
+  .updates-page .updates .item figcaption {
+    padding: 30px 0 20px 0;
+    background-color: #181818; }
+    .updates-page .updates .item figcaption h3 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: #fff;
+      text-transform: uppercase; }
+      .updates-page .updates .item figcaption h3 a {
+        color: #fff; }
+    .updates-page .updates .item figcaption .date {
+      font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      color: #d16651;
+      text-transform: uppercase; }
+      .updates-page .updates .item figcaption .date:after {
+        content: ' ';
+        display: block;
+        width: 100px;
+        margin: 20px auto;
+        height: 1px;
+        background-color: #303030; }
+    .updates-page .updates .item figcaption .author {
+      font-style: italic;
+      color: #717171; }
+
+/* -----------------------------------------------------------------------------
+// 5. Updates Detail Page
+// ----------------------------------------------------------------------------- */
+.updates-detail .section-headline {
+  margin-bottom: 50px;
+  text-align: left; }
+  .updates-detail .section-headline h3 {
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
+.updates-detail .hero-title {
+  background: url(http://placehold.it/1895x500); }
+.updates-detail .post-img {
+  position: relative;
+  margin-bottom: 30px; }
+  .updates-detail .post-img .caption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #181818; }
+    .updates-detail .post-img .caption h2 {
+      margin-bottom: 15px;
+      color: #fff;
+      text-transform: uppercase; }
+    .updates-detail .post-img .caption p {
+      font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #717171; }
+      .updates-detail .post-img .caption p .date {
+        color: #d16651; }
+      .updates-detail .post-img .caption p em {
+        margin: 0 10px;
+        color: #fff;
+        font-style: normall; }
+.updates-detail .post-tags {
+  margin-top: 50px; }
+  .updates-detail .post-tags h3 {
+    display: inline-block;
+    margin-right: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .updates-detail .post-tags ul {
+    display: inline-block;
+    padding: 0; }
+  .updates-detail .post-tags li {
+    list-style-type: none;
+    display: inline-block; }
+  .updates-detail .post-tags a {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 10px 30px; }
+.updates-detail .post-comments {
+  margin: 100px 0; }
+  .updates-detail .post-comments .comment {
+    padding: 30px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9; }
+    .updates-detail .post-comments .comment:before, .updates-detail .post-comments .comment:after {
+      content: " ";
+      display: table; }
+    .updates-detail .post-comments .comment:after {
+      clear: both; }
+    .updates-detail .post-comments .comment-avatar {
+      width: 10%;
+      float: left;
+      overflow: hidden; }
+      .updates-detail .post-comments .comment-avatar img {
+        margin: 0; }
+    .updates-detail .post-comments .comment .align {
+      float: left;
+      margin-left: 3%;
+      width: 81%; }
+    .updates-detail .post-comments .comment h5 {
+      text-transform: uppercase;
+      font-size: 20px;
+      margin: 0 10px 10px 0; }
+    .updates-detail .post-comments .comment .date {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+      color: #d16651;
+      letter-spacing: 1px; }
+    .updates-detail .post-comments .comment .reply {
+      font-size: 12px;
+      color: #9c9c9c;
+      text-transform: uppercase;
+      font-family: "Josefin Sans", Helvetica, Arial, sans-serif; }
+      .updates-detail .post-comments .comment .reply em {
+        display: inline-block;
+        margin: 0 10px; }
+    .updates-detail .post-comments .comment p {
+      margin-top: 30px; }
+.updates-detail .contact-form .left-side {
+  padding-right: 0; }
+.updates-detail .contact-form .right-side {
+  padding-left: 0; }
+@media (max-width: 992px) {
+  .updates-detail .contact-form .right-side,
+  .updates-detail .contact-form .left-side {
+    padding: 0 15px; } }
+.updates-detail .contact-form .form-control {
+  margin-bottom: 0;
+  border: 2px solid #181818;
+  background-color: transparent;
+  color: #181818;
+  text-transform: uppercase; }
+  .updates-detail .contact-form .form-control.fix {
+    border-bottom: none;
+    border-right: none; }
+  .updates-detail .contact-form .form-control.fix-bottom {
+    border-bottom: none; }
+  @media (max-width: 992px) {
+    .updates-detail .contact-form .form-control.fix {
+      border-right: 2px solid #181818; } }
+.updates-detail .contact-form input::-webkit-input-placeholder,
+.updates-detail .contact-form textarea::-webkit-input-placeholder {
+  color: #181818; }
+.updates-detail .contact-form .btn {
+  border-top: none;
+  border-width: 2px; }
+.updates-detail aside .widget {
+  margin-bottom: 50px; }
+  .updates-detail aside .widget h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .updates-detail aside .widget .form-control {
+    border: 2px solid #181818;
+    text-transform: uppercase;
+    background: transparent url(../img/search-icon.png) no-repeat 93% center; }
+  .updates-detail aside .widget input::-webkit-input-placeholder,
+  .updates-detail aside .widget textarea::-webkit-input-placeholder {
+    color: #181818; }
+  .updates-detail aside .widget.recent-posts li:before {
+    color: #181818; }
+  .updates-detail aside .widget.recent-posts li:hover:before {
+    color: #d16651; }
+  .updates-detail aside .widget.recent-posts a {
+    color: #9c9c9c; }
+  .updates-detail aside .widget.tags ul {
+    padding: 0; }
+  .updates-detail aside .widget.tags li {
+    display: inline-block;
+    list-style-type: none; }
+  .updates-detail aside .widget.tags a {
+    padding: 10px 20px;
+    font-size: 10px; }
+  .updates-detail aside .widget.instagram:before, .updates-detail aside .widget.instagram:after {
+    content: " ";
+    display: table; }
+  .updates-detail aside .widget.instagram:after {
+    clear: both; }
+  .updates-detail aside .widget.instagram .item {
+    position: relative;
+    width: 48.3% !important;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 5px; }
+    .updates-detail aside .widget.instagram .item:hover .popup {
+      opacity: 1; }
+  .updates-detail aside .widget.instagram .popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d16651;
+    background-color: rgba(209, 102, 81, 0.85);
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+    .updates-detail aside .widget.instagram .popup img {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  .updates-detail aside .widget.archives em {
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    color: #d16651;
+    margin-right: 10px; }
+  .updates-detail aside .widget.archives a {
+    color: #9c9c9c; }
+
+/* -----------------------------------------------------------------------------
+// 6. Contact Page
+// ----------------------------------------------------------------------------- */
+.contact-page header {
+  z-index: 100; }
+.contact-page .section-headline {
+  margin-bottom: 50px;
+  text-align: left; }
+  .contact-page .section-headline h3 {
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
+.contact-page .contact-info .item {
+  padding: 50px; }
+  .contact-page .contact-info .item h4 {
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+    .contact-page .contact-info .item h4 + p {
+      margin-bottom: 20px; }
+  .contact-page .contact-info .item.dark {
+    background-color: #181818; }
+  .contact-page .contact-info .item.light {
+    background-color: #242424; }
+  .contact-page .contact-info .item.lighter {
+    background-color: #363636; }
+.contact-page .contact-map {
+  position: relative; }
+  .contact-page .contact-map .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .8; }
+  .contact-page .contact-map #map {
+    width: 100%;
+    height: 450px;
+    z-index: 0;
+    position: relative; }
+  .contact-page .contact-map h2 {
+    z-index: 100;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase; }
+.contact-page .contact .left-side {
+  padding-right: 0; }
+.contact-page .contact .right-side {
+  padding-left: 0; }
+@media (max-width: 992px) {
+  .contact-page .contact .right-side,
+  .contact-page .contact .left-side {
+    padding: 0 15px; } }
+.contact-page .contact .form-control {
+  margin-bottom: 0;
+  border: 2px solid #181818;
+  background-color: transparent;
+  color: #181818;
+  text-transform: uppercase; }
+  .contact-page .contact .form-control.fix {
+    border-bottom: none;
+    border-right: none; }
+  .contact-page .contact .form-control.fix-bottom {
+    border-bottom: none; }
+  @media (max-width: 992px) {
+    .contact-page .contact .form-control.fix {
+      border-right: 2px solid #181818; } }
+.contact-page .contact input::-webkit-input-placeholder,
+.contact-page .contact textarea::-webkit-input-placeholder {
+  color: #181818; }
+.contact-page .contact .btn {
+  border-top: none;
+  border-width: 2px; }
+
+/*# sourceMappingURL=pages.css.map */

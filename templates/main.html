@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- SECTION 6 - UPDATES -->
+    <section class="updates space space-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-headline">
+                        <h3>LOOKBOOK 2017</h3>
+                        <p>We provide talented and beautiful models for businesses and media. Chekout our brand new agency models and new photography portfolios.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-buttons text-right">
+                        <a href="#" class="btn btn-default btn-dark">DRESS</a>
+                        <a href="#" class="btn btn-bordered btn-dark">CASUAL</a>
+                        <a href="#" class="btn btn-bordered btn-dark">COAT</a>
+                        <a href="#" class="btn btn-bordered btn-dark">AVANT-GARDE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for res in fashions %}
+                    <div class="col-sm-6 col-md-3">
+                        <figure class="item">
+                            <div class="item-img">
+                                <a href="index.php?detail={{res.objectId}}"><img src="img/items/{{res.cover}}" alt="About the image"></a>
+                            </div>
+                            <figcaption>
+                                <h3><a href="index.php?detail={{res.objectId}}">#{{res.code}}</a></h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- // SECTION 6 -->
+{% endblock %}
+{% block scripting %}
+    {{parent()}}
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+     <!-- SECTION 1 - HERO TITLE -->
+        <section class="hero-title">
+            <div class="container">
+                <div class="row">
+                    <h2></h2>
+                </div><!-- // .row -->
+            </div><!-- // .container -->
+        </section>
+        <!-- // SECTION 1 -->
+
+        <!-- SECTION 2 - POST & SIDEBAR -->
+        <section class="space">
+            <div class="container">
+                <div class="row">
+
+                    <!-- POST -->
+                    <div class="col-md-8">
+                        <div class="post-img">
+                            <img src="img/items/{{item.cover}}" alt="About the image">
+                            <div class="caption">
+                                <h2>#{{item.code}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SIDE BAR -->
+                    <div class="col-md-4">
+                        <aside class="hidden-xs hidden-sm">
+                            <div class="widget instagram">
+                                {% for res in item.files %}
+                                    {{res}}
+                                    <div class="item" style="width:48.3%">
+                                        <img src="{{res}}" alt="{{item.code}}">
+                                        <a href="{{res}}" class="popup">
+                                            <img src="{{res}}" alt="{{item.code}}">
+                                        </a>
+                                    </div>  
+                                {% endfor %}
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // SECTION 2 -->
+{% endblock %}
+{% block scripting %}
+    {{parent()}}
+{% endblock %}
